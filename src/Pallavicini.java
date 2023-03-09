@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // Chiamare la classe col proprio cognome
-public class MainClass
+public class Pallavicini
 {
 	static Scanner in = new Scanner(System.in);
 	
@@ -15,7 +15,7 @@ public class MainClass
 			{
 				//aggiungere, togliere casi a seconda delle proprie scelte
 				case 1:
-					//Inserire metodo statico
+					es1();
 				break;
 				case 2:
 					//Inserire metodo statico
@@ -34,10 +34,28 @@ public class MainClass
 		// Modificare il menù secondo le proprie scelte
 		System.out.println("1 - Es n. * - Titolo es. *");
 		System.out.println("2 - Es n. * - Titolo es. *");
-		System.out.println("3 - Es n. * - Titolo es. *");
-		System.out.println("4 - Es n. * - Titolo es. *");
-		System.out.println("5 - Es n. * - Titolo es. *");
+		
 	}
-	
-	// Aggiungere qui i metodi statici relativi agli esercizi scelti
+
+	static void es1()
+	{
+		double [] array1 = new double [6];
+		double [] array2 = new double [3];
+		int k=0;
+		int h=1;
+		for(int i=0; i<array1.length; i++)
+			{
+				System.out.println("inserisci 6 valori" + i);
+				array1[i] =in.nextDouble();
+			}
+		for(int j=0; j<array2.length; j++)
+			{
+			array2[j]=(array1[k]*array1[h]);
+			k+=2;
+			h+=2;
+			System.out.println(array2[j]);
+			}
+	}
+
 }
+
